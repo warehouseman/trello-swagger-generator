@@ -24,6 +24,7 @@ Open your browser to [localhost:8000](http://localhost:8000)
     unzip swagger.zip
     mv swagger-ui-master swagger-ui
     mv swagger.zip swagger-ui
+    cd swagger-ui
     
 edit `dist/index.html` line #32 replacing ...
 
