@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 from processArguments import processArguments
 import json
 import sys
+import re
 
 #  Constants
 REQUIRED_PERMISSIONS="Required permissions:"
@@ -27,6 +28,51 @@ def prepareNote(soup) :
       
   return ' '.join(aryNotes)
 
+def fixFieldName(aField) :  # get first full word and if _id is a suffix make it a prefix
+  field = aField.split()[0]
+  if "_id" in field :
+    field = field.replace('_id', '')
+    field = 'id{}'.format(field.title())
+  return field
+
+def preparePath(path, basePath) :  # detect/prepare and flag the contained path parmeters
+
+  namePath = path.replace('[', '{').replace(']', '}').strip()
+  namePath = namePath.replace(basePath, '')
+  fields = []
+  for span in re.finditer('\[(.*?)\]', path):
+    aField = path[span.start()+1:span.end()-1]
+    nameField = fixFieldName(aField)
+    namePath = namePath.replace(aField, nameField)
+#    print '{} - ({} vs {})'.format(namePath, aField, nameField)
+    fields.append({nameField : aField})
+
+  return {"namePath" : namePath, "fields" : fields }
+
+
+
+http2crud = {'get' : 'get', 'put' : 'add', 'post' : 'update', 'delete' : 'delete'}
+def makeOperationId(method, defPath) :  # get first full word and if _id is a suffix make it a prefix
+  bits = defPath["namePath"].split('/')
+  parms = []
+  nouns = []
+  for bit in bits :
+    if '{' in bit :
+      parm = bit.strip().replace('{', '').replace('}', '')
+      parms.append('{}{}'.format(parm[:1].title(), parm[1:]))
+    else :
+      noun = bit.strip()
+      nouns.append('{}{}'.format(noun[:1].title(), noun[1:]))
+
+    parmClause = 'By'.join(parms)
+    if len(parmClause) > 0 :
+      parmClause = 'By{}'.format(parmClause)
+    operationId = '{}{}{}'.format(http2crud[method], ''.join(nouns), parmClause)
+
+  print 'Operation Id : {}\n\n'.format(operationId)
+  return operationId
+
+
 def processMethod(soup, swagger, entity):
 
 
@@ -34,13 +80,16 @@ def processMethod(soup, swagger, entity):
   print "# {}".format(soup)
   sys.exit()
   '''
-  
-  namePath = soup.h2.span.text.replace('[', '{').replace(']', '}').strip()
+  defPath = preparePath(soup.h2.span.text, swagger["basePath"])
+  namePath = defPath["namePath"]
   nameMethod = soup.h2.next_element.lower().strip()
-#  print "Method : {}, Path : {}".format(nameMethod, namePath)
+  print "Method : {}, Path : {}".format(nameMethod, namePath)
 
   if   namePath not in swagger['paths']           :  swagger['paths'][namePath]             = {}
   if nameMethod not in swagger['paths'][namePath] :  swagger['paths'][namePath][nameMethod] = {"tags" : [entity]}
+
+  swagger['paths'][namePath][nameMethod]['operationId'] = makeOperationId(nameMethod, defPath)
+  swagger['paths'][namePath][nameMethod]['summary'] = '{}()'.format(swagger['paths'][namePath][nameMethod]['operationId'])
 
   soup.h2.extract()
 
@@ -67,7 +116,7 @@ def processMethod(soup, swagger, entity):
   
   swagger['paths'][namePath][nameMethod]['parameters'] = []
   if arguments.ul != None :
-    processArguments(arguments, swagger['paths'][namePath][nameMethod])
+    processArguments(arguments, swagger['paths'][namePath][nameMethod], defPath["fields"])
       
   return
   

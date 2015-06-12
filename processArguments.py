@@ -10,7 +10,7 @@ REQUIRED = "required"
 
 
 #  Methods
-def processArguments(soup, swagger):
+def processArguments(soup, swagger, path_fields):
 
   '''
   print ' ..... ..... ..... ..... ..... ..... ..... '
@@ -22,12 +22,43 @@ def processArguments(soup, swagger):
   arguments = soup.ul.contents
 
   idx = 0
-  for argument in arguments :
+  for argument in arguments :   # process all the fields that follow the "?" in the URL
     if isinstance(argument, type(soup.li)) :
 #      print "#{} -- {}".format(idx, argument)
       processArgument(argument, swagger)
       idx = idx + 1
     
+  for field in path_fields :   # process all the fields that form part of the URL
+#    print "------------ new parameter -- {}".format(field)
+    swagger["parameters"].append({
+        "name" : field.iterkeys().next()
+      , "required" : "true"
+      , "in" : "path"
+      , "type" : "string"
+      , "description" : field.itervalues().next()
+      , "default" : "undefined"
+    })
+
+  #  add the authorization key field
+    swagger["parameters"].append({
+        "name" : "key"
+      , "required" : "true"
+      , "in" : "query"
+      , "type" : "string"
+      , "description" : '<a href="https://trello.com/1/appKey/generate"  target="_blank">Generate your application key</a>'
+      , "default" : "undefined"
+    })
+
+  #  add the 3rd party token field field
+    swagger["parameters"].append({
+        "name" : "token"
+      , "required" : "true"
+      , "in" : "query"
+      , "type" : "string"
+      , "description" : '<a href="https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user"  target="_blank">Getting a token from a user</a>'
+      , "default" : "undefined"
+    })
+
   return
   
 #  -   -   -   -   -   -   -   -   -   -   -   

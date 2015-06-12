@@ -11,6 +11,16 @@ TRELLO_JSON_FILE="TrelloAPI.json"
 # Methods
 def processTrelloEntity(soup, swagger, numEntity):
   entity = swagger['tags'][numEntity]['name']
+  '''
+#  print "Entity {} ".format(entity)
+#  if "board" in entity :
+  if "action" in entity :
+#  if "label" in entity :
+#  if "member" in entity :
+    print "Doing {}".format(entity)
+  else:
+    return
+  '''
   index = soup.html.body.find(class_='section', id=entity)
   for div in index.find_all("div", recursive=False) :
     print "Entity {}  --  {}".format(entity, div['id'])
