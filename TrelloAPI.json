@@ -20146,7 +20146,7 @@
           {
             "description": "a number from 1 to 20", 
             "default": "8", 
-            "required": "false", 
+            "required": false, 
             "in": "query", 
             "type": "string", 
             "name": "limit"
@@ -20154,7 +20154,7 @@
           {
             "description": "An id, or null", 
             "default": "undefined", 
-            "required": "false", 
+            "required": false, 
             "in": "query", 
             "type": "string", 
             "name": "idBoard"
@@ -20162,7 +20162,7 @@
           {
             "description": "An id, or null", 
             "default": "undefined", 
-            "required": "false", 
+            "required": false, 
             "in": "query", 
             "type": "string", 
             "name": "idOrganization"
@@ -20170,7 +20170,7 @@
           {
             "description": "A boolean", 
             "default": "false", 
-            "required": "false", 
+            "required": false, 
             "in": "query", 
             "type": "string", 
             "name": "onlyOrgMembers"
