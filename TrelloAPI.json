@@ -100,8 +100,8 @@
             ]
           }
         ], 
-        "operationId": "addCardsDueByCard", 
-        "summary": "addCardsDueByCard()", 
+        "operationId": "updateCardsDueByCard", 
+        "summary": "updateCardsDueByCard()", 
         "parameters": [
           {
             "description": "A date, or null", 
@@ -445,8 +445,8 @@
             ]
           }
         ], 
-        "operationId": "addMembersPrefsLocaleByIdMember", 
-        "summary": "addMembersPrefsLocaleByIdMember()", 
+        "operationId": "updateMembersPrefsLocaleByIdMember", 
+        "summary": "updateMembersPrefsLocaleByIdMember()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 255", 
@@ -637,8 +637,8 @@
             ]
           }
         ], 
-        "operationId": "addListsIdBoardByIdList", 
-        "summary": "addListsIdBoardByIdList()", 
+        "operationId": "updateListsIdBoardByIdList", 
+        "summary": "updateListsIdBoardByIdList()", 
         "parameters": [
           {
             "description": "id of the board the list should be moved to", 
@@ -696,8 +696,8 @@
             ]
           }
         ], 
-        "operationId": "updateMembersOneTimeMessagesDismissedByIdMember", 
-        "summary": "updateMembersOneTimeMessagesDismissedByIdMember()", 
+        "operationId": "addMembersOneTimeMessagesDismissedByIdMember", 
+        "summary": "addMembersOneTimeMessagesDismissedByIdMember()", 
         "parameters": [
           {
             "description": "Type of message dismissed", 
@@ -747,8 +747,8 @@
             ]
           }
         ], 
-        "operationId": "addChecklistsNameByIdChecklist", 
-        "summary": "addChecklistsNameByIdChecklist()", 
+        "operationId": "updateChecklistsNameByIdChecklist", 
+        "summary": "updateChecklistsNameByIdChecklist()", 
         "parameters": [
           {
             "description": "a string with a length from 1 to 16384", 
@@ -798,8 +798,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsPrefsCardCoversByIdBoard", 
-        "summary": "addBoardsPrefsCardCoversByIdBoard()", 
+        "operationId": "updateBoardsPrefsCardCoversByIdBoard", 
+        "summary": "updateBoardsPrefsCardCoversByIdBoard()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -849,8 +849,8 @@
             ]
           }
         ], 
-        "operationId": "updateBoardsLabelsByIdBoard", 
-        "summary": "updateBoardsLabelsByIdBoard()", 
+        "operationId": "addBoardsLabelsByIdBoard", 
+        "summary": "addBoardsLabelsByIdBoard()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -964,8 +964,8 @@
             ]
           }
         ], 
-        "operationId": "updateListsArchiveAllCardsByIdList", 
-        "summary": "updateListsArchiveAllCardsByIdList()", 
+        "operationId": "addListsArchiveAllCardsByIdList", 
+        "summary": "addListsArchiveAllCardsByIdList()", 
         "parameters": [], 
         "tags": [
           "list"
@@ -1318,8 +1318,8 @@
             ]
           }
         ], 
-        "operationId": "addLabelsColorByIdLabel", 
-        "summary": "addLabelsColorByIdLabel()", 
+        "operationId": "updateLabelsColorByIdLabel", 
+        "summary": "updateLabelsColorByIdLabel()", 
         "parameters": [
           {
             "description": "A valid label color or null", 
@@ -1600,8 +1600,8 @@
             ]
           }
         ], 
-        "operationId": "addMembersBoardBackgroundsByIdMemberByIdBoardBackground", 
-        "summary": "addMembersBoardBackgroundsByIdMemberByIdBoardBackground()", 
+        "operationId": "updateMembersBoardBackgroundsByIdMemberByIdBoardBackground", 
+        "summary": "updateMembersBoardBackgroundsByIdMemberByIdBoardBackground()", 
         "parameters": [
           {
             "description": "The id of the background to update", 
@@ -1844,8 +1844,8 @@
             ]
           }
         ], 
-        "operationId": "addOrganizationsPrefsOrgInviteRestrictByIdOrg", 
-        "summary": "addOrganizationsPrefsOrgInviteRestrictByIdOrg()", 
+        "operationId": "updateOrganizationsPrefsOrgInviteRestrictByIdOrg", 
+        "summary": "updateOrganizationsPrefsOrgInviteRestrictByIdOrg()", 
         "parameters": [
           {
             "description": "An email address with optional expansion tokens", 
@@ -1994,8 +1994,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsPrefsInvitationsByIdBoard", 
-        "summary": "addBoardsPrefsInvitationsByIdBoard()", 
+        "operationId": "updateBoardsPrefsInvitationsByIdBoard", 
+        "summary": "updateBoardsPrefsInvitationsByIdBoard()", 
         "parameters": [
           {
             "description": "One of: admins or members", 
@@ -2333,8 +2333,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsMyPrefsShowListGuideByIdBoard", 
-        "summary": "addBoardsMyPrefsShowListGuideByIdBoard()", 
+        "operationId": "updateBoardsMyPrefsShowListGuideByIdBoard", 
+        "summary": "updateBoardsMyPrefsShowListGuideByIdBoard()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -2459,8 +2459,8 @@
             ]
           }
         ], 
-        "operationId": "addCardsIdBoardByCard", 
-        "summary": "addCardsIdBoardByCard()", 
+        "operationId": "updateCardsIdBoardByCard", 
+        "summary": "updateCardsIdBoardByCard()", 
         "parameters": [
           {
             "description": "id of the board the card should be moved to", 
@@ -2518,8 +2518,8 @@
             ]
           }
         ], 
-        "operationId": "updateCards", 
-        "summary": "updateCards()", 
+        "operationId": "addCards", 
+        "summary": "addCards()", 
         "parameters": [
           {
             "description": "The name of the new card.  It isn&#39;t required if the name is being copied from provided by a URL, file or card that is being copied.", 
@@ -2633,8 +2633,8 @@
             ]
           }
         ], 
-        "operationId": "addCardsChecklistCheckItemNameByCardByIdChecklistByIdCheckItem", 
-        "summary": "addCardsChecklistCheckItemNameByCardByIdChecklistByIdCheckItem()", 
+        "operationId": "updateCardsChecklistCheckItemNameByCardByIdChecklistByIdCheckItem", 
+        "summary": "updateCardsChecklistCheckItemNameByCardByIdChecklistByIdCheckItem()", 
         "parameters": [
           {
             "description": "The id of the checklist.", 
@@ -3002,8 +3002,8 @@
             ]
           }
         ], 
-        "operationId": "addLabelsNameByIdLabel", 
-        "summary": "addLabelsNameByIdLabel()", 
+        "operationId": "updateLabelsNameByIdLabel", 
+        "summary": "updateLabelsNameByIdLabel()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -3191,8 +3191,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsPrefsCommentsByIdBoard", 
-        "summary": "addBoardsPrefsCommentsByIdBoard()", 
+        "operationId": "updateBoardsPrefsCommentsByIdBoard", 
+        "summary": "updateBoardsPrefsCommentsByIdBoard()", 
         "parameters": [
           {
             "description": "One of: disabled, members, observers, org or public", 
@@ -3242,8 +3242,8 @@
             ]
           }
         ], 
-        "operationId": "addSessionsByIdSession", 
-        "summary": "addSessionsByIdSession()", 
+        "operationId": "updateSessionsByIdSession", 
+        "summary": "updateSessionsByIdSession()", 
         "parameters": [
           {
             "description": "One of: active, disconnected or idle", 
@@ -3309,8 +3309,8 @@
             ]
           }
         ], 
-        "operationId": "addChecklistsIdCardByIdChecklist", 
-        "summary": "addChecklistsIdCardByIdChecklist()", 
+        "operationId": "updateChecklistsIdCardByIdChecklist", 
+        "summary": "updateChecklistsIdCardByIdChecklist()", 
         "parameters": [
           {
             "description": "The id of the card that the checklist is on", 
@@ -3583,8 +3583,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsPrefsBackgroundByIdBoard", 
-        "summary": "addBoardsPrefsBackgroundByIdBoard()", 
+        "operationId": "updateBoardsPrefsBackgroundByIdBoard", 
+        "summary": "updateBoardsPrefsBackgroundByIdBoard()", 
         "parameters": [
           {
             "description": "A standard background name, or the id of a custom background", 
@@ -3775,8 +3775,8 @@
             ]
           }
         ], 
-        "operationId": "addOrganizationsWebsiteByIdOrg", 
-        "summary": "addOrganizationsWebsiteByIdOrg()", 
+        "operationId": "updateOrganizationsWebsiteByIdOrg", 
+        "summary": "updateOrganizationsWebsiteByIdOrg()", 
         "parameters": [
           {
             "description": "A URL starting with http:// or https:// or null", 
@@ -3826,8 +3826,8 @@
             ]
           }
         ], 
-        "operationId": "addCardsByCard", 
-        "summary": "addCardsByCard()", 
+        "operationId": "updateCardsByCard", 
+        "summary": "updateCardsByCard()", 
         "parameters": [
           {
             "description": "a string with a length from 1 to 16384", 
@@ -4197,8 +4197,8 @@
             ]
           }
         ], 
-        "operationId": "addMembersSavedSearchesPosByIdMemberByIdSavedSearch", 
-        "summary": "addMembersSavedSearchesPosByIdMemberByIdSavedSearch()", 
+        "operationId": "updateMembersSavedSearchesPosByIdMemberByIdSavedSearch", 
+        "summary": "updateMembersSavedSearchesPosByIdMemberByIdSavedSearch()", 
         "parameters": [
           {
             "description": "An id", 
@@ -4354,8 +4354,8 @@
             ]
           }
         ], 
-        "operationId": "addCardsIdAttachmentCoverByCard", 
-        "summary": "addCardsIdAttachmentCoverByCard()", 
+        "operationId": "updateCardsIdAttachmentCoverByCard", 
+        "summary": "updateCardsIdAttachmentCoverByCard()", 
         "parameters": [
           {
             "description": "Id of the image attachment of this card to use as its cover, or null for no cover", 
@@ -4405,8 +4405,8 @@
             ]
           }
         ], 
-        "operationId": "updateCardsIdLabelsByCard", 
-        "summary": "updateCardsIdLabelsByCard()", 
+        "operationId": "addCardsIdLabelsByCard", 
+        "summary": "addCardsIdLabelsByCard()", 
         "parameters": [
           {
             "description": "The id of the label to add", 
@@ -4456,8 +4456,8 @@
             ]
           }
         ], 
-        "operationId": "addMembersSavedSearchesNameByIdMemberByIdSavedSearch", 
-        "summary": "addMembersSavedSearchesNameByIdMemberByIdSavedSearch()", 
+        "operationId": "updateMembersSavedSearchesNameByIdMemberByIdSavedSearch", 
+        "summary": "updateMembersSavedSearchesNameByIdMemberByIdSavedSearch()", 
         "parameters": [
           {
             "description": "An id", 
@@ -4556,8 +4556,8 @@
             ]
           }
         ], 
-        "operationId": "addOrganizationsNameByIdOrg", 
-        "summary": "addOrganizationsNameByIdOrg()", 
+        "operationId": "updateOrganizationsNameByIdOrg", 
+        "summary": "updateOrganizationsNameByIdOrg()", 
         "parameters": [
           {
             "description": "A string with a length of at least 3.  Only lowercase letters, underscores, and numbers are allowed.  Must be unique.", 
@@ -4607,8 +4607,8 @@
             ]
           }
         ], 
-        "operationId": "updateCardsMembersVotedByCard", 
-        "summary": "updateCardsMembersVotedByCard()", 
+        "operationId": "addCardsMembersVotedByCard", 
+        "summary": "addCardsMembersVotedByCard()", 
         "parameters": [
           {
             "description": "The id of the member to vote &#39;yes&#39; on the card", 
@@ -4706,8 +4706,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsSubscribedByIdBoard", 
-        "summary": "addBoardsSubscribedByIdBoard()", 
+        "operationId": "updateBoardsSubscribedByIdBoard", 
+        "summary": "updateBoardsSubscribedByIdBoard()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -4757,8 +4757,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsPrefsCardAgingByIdBoard", 
-        "summary": "addBoardsPrefsCardAgingByIdBoard()", 
+        "operationId": "updateBoardsPrefsCardAgingByIdBoard", 
+        "summary": "updateBoardsPrefsCardAgingByIdBoard()", 
         "parameters": [
           {
             "description": "One of: pirate or regular", 
@@ -4858,8 +4858,8 @@
             ]
           }
         ], 
-        "operationId": "addOrganizationsMembersByIdOrgByIdMember", 
-        "summary": "addOrganizationsMembersByIdOrgByIdMember()", 
+        "operationId": "updateOrganizationsMembersByIdOrgByIdMember", 
+        "summary": "updateOrganizationsMembersByIdOrgByIdMember()", 
         "parameters": [
           {
             "description": "An id, username, or organization name", 
@@ -5014,8 +5014,8 @@
             ]
           }
         ], 
-        "operationId": "addWebhooksCallbackURLByIdWebhook", 
-        "summary": "addWebhooksCallbackURLByIdWebhook()", 
+        "operationId": "updateWebhooksCallbackURLByIdWebhook", 
+        "summary": "updateWebhooksCallbackURLByIdWebhook()", 
         "parameters": [
           {
             "description": "A valid URL that is reachable with a HEAD request", 
@@ -5115,8 +5115,8 @@
             ]
           }
         ], 
-        "operationId": "updateBoardsMarkAsViewedByIdBoard", 
-        "summary": "updateBoardsMarkAsViewedByIdBoard()", 
+        "operationId": "addBoardsMarkAsViewedByIdBoard", 
+        "summary": "addBoardsMarkAsViewedByIdBoard()", 
         "parameters": [], 
         "tags": [
           "board"
@@ -5133,8 +5133,8 @@
             ]
           }
         ], 
-        "operationId": "updateMembersBoardBackgroundsByIdMember", 
-        "summary": "updateMembersBoardBackgroundsByIdMember()", 
+        "operationId": "addMembersBoardBackgroundsByIdMember", 
+        "summary": "addMembersBoardBackgroundsByIdMember()", 
         "parameters": [
           {
             "description": "A file", 
@@ -5232,8 +5232,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsMembersByIdBoard", 
-        "summary": "addBoardsMembersByIdBoard()", 
+        "operationId": "updateBoardsMembersByIdBoard", 
+        "summary": "updateBoardsMembersByIdBoard()", 
         "parameters": [
           {
             "description": "An email address", 
@@ -5430,8 +5430,8 @@
             ]
           }
         ], 
-        "operationId": "addListsByIdList", 
-        "summary": "addListsByIdList()", 
+        "operationId": "updateListsByIdList", 
+        "summary": "updateListsByIdList()", 
         "parameters": [
           {
             "description": "a string with a length from 1 to 16384", 
@@ -5593,8 +5593,8 @@
             ]
           }
         ], 
-        "operationId": "addCardsStickersByCardByIdSticker", 
-        "summary": "addCardsStickersByCardByIdSticker()", 
+        "operationId": "updateCardsStickersByCardByIdSticker", 
+        "summary": "updateCardsStickersByCardByIdSticker()", 
         "parameters": [
           {
             "description": "The id of the sticker to modify", 
@@ -5853,8 +5853,8 @@
             ]
           }
         ], 
-        "operationId": "addMembersPrefsMinutesBetweenSummariesByIdMember", 
-        "summary": "addMembersPrefsMinutesBetweenSummariesByIdMember()", 
+        "operationId": "updateMembersPrefsMinutesBetweenSummariesByIdMember", 
+        "summary": "updateMembersPrefsMinutesBetweenSummariesByIdMember()", 
         "parameters": [
           {
             "description": "-1 (disabled), 1 or 60", 
@@ -5971,8 +5971,8 @@
             ]
           }
         ], 
-        "operationId": "updateCardsChecklistCheckItemConvertToCardByCardByIdChecklistByIdCheckItem", 
-        "summary": "updateCardsChecklistCheckItemConvertToCardByCardByIdChecklistByIdCheckItem()", 
+        "operationId": "addCardsChecklistCheckItemConvertToCardByCardByIdChecklistByIdCheckItem", 
+        "summary": "addCardsChecklistCheckItemConvertToCardByCardByIdChecklistByIdCheckItem()", 
         "parameters": [
           {
             "description": "The id of the checklist.", 
@@ -6078,8 +6078,8 @@
             ]
           }
         ], 
-        "operationId": "updateCardsMarkAssociatedNotificationsReadByCard", 
-        "summary": "updateCardsMarkAssociatedNotificationsReadByCard()", 
+        "operationId": "addCardsMarkAssociatedNotificationsReadByCard", 
+        "summary": "addCardsMarkAssociatedNotificationsReadByCard()", 
         "parameters": [], 
         "tags": [
           "card"
@@ -6237,8 +6237,8 @@
             ]
           }
         ], 
-        "operationId": "updateBoardsPowerUpsByIdBoard", 
-        "summary": "updateBoardsPowerUpsByIdBoard()", 
+        "operationId": "addBoardsPowerUpsByIdBoard", 
+        "summary": "addBoardsPowerUpsByIdBoard()", 
         "parameters": [
           {
             "description": "One of: calendar, cardAging, recap or voting", 
@@ -6288,8 +6288,8 @@
             ]
           }
         ], 
-        "operationId": "addOrganizationsDescByIdOrg", 
-        "summary": "addOrganizationsDescByIdOrg()", 
+        "operationId": "updateOrganizationsDescByIdOrg", 
+        "summary": "updateOrganizationsDescByIdOrg()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -6413,8 +6413,8 @@
             ]
           }
         ], 
-        "operationId": "addCardsSubscribedByCard", 
-        "summary": "addCardsSubscribedByCard()", 
+        "operationId": "updateCardsSubscribedByCard", 
+        "summary": "updateCardsSubscribedByCard()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -6630,8 +6630,8 @@
             ]
           }
         ], 
-        "operationId": "addListsSubscribedByIdList", 
-        "summary": "addListsSubscribedByIdList()", 
+        "operationId": "updateListsSubscribedByIdList", 
+        "summary": "updateListsSubscribedByIdList()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -6681,8 +6681,8 @@
             ]
           }
         ], 
-        "operationId": "updateListsMoveAllCardsByIdList", 
-        "summary": "updateListsMoveAllCardsByIdList()", 
+        "operationId": "addListsMoveAllCardsByIdList", 
+        "summary": "addListsMoveAllCardsByIdList()", 
         "parameters": [
           {
             "description": "id of the board that the cards should be moved to", 
@@ -6740,8 +6740,8 @@
             ]
           }
         ], 
-        "operationId": "updateMembersCustomBoardBackgroundsByIdMember", 
-        "summary": "updateMembersCustomBoardBackgroundsByIdMember()", 
+        "operationId": "addMembersCustomBoardBackgroundsByIdMember", 
+        "summary": "addMembersCustomBoardBackgroundsByIdMember()", 
         "parameters": [
           {
             "description": "A file", 
@@ -6839,8 +6839,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsMembersByIdBoardByIdMember", 
-        "summary": "addBoardsMembersByIdBoardByIdMember()", 
+        "operationId": "updateBoardsMembersByIdBoardByIdMember", 
+        "summary": "updateBoardsMembersByIdBoardByIdMember()", 
         "parameters": [
           {
             "description": "An id, username, or organization name", 
@@ -6995,8 +6995,8 @@
             ]
           }
         ], 
-        "operationId": "updateBoardsListsByIdBoard", 
-        "summary": "updateBoardsListsByIdBoard()", 
+        "operationId": "addBoardsListsByIdBoard", 
+        "summary": "addBoardsListsByIdBoard()", 
         "parameters": [
           {
             "description": "a string with a length from 1 to 16384", 
@@ -7193,8 +7193,8 @@
             ]
           }
         ], 
-        "operationId": "updateMembersCustomStickersByIdMember", 
-        "summary": "updateMembersCustomStickersByIdMember()", 
+        "operationId": "addMembersCustomStickersByIdMember", 
+        "summary": "addMembersCustomStickersByIdMember()", 
         "parameters": [
           {
             "description": "A file", 
@@ -7293,8 +7293,8 @@
             ]
           }
         ], 
-        "operationId": "addNotificationsByIdNotification", 
-        "summary": "addNotificationsByIdNotification()", 
+        "operationId": "updateNotificationsByIdNotification", 
+        "summary": "updateNotificationsByIdNotification()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -7496,8 +7496,8 @@
             ]
           }
         ], 
-        "operationId": "addMembersCustomBoardBackgroundsByIdMemberByIdBoardBackground", 
-        "summary": "addMembersCustomBoardBackgroundsByIdMemberByIdBoardBackground()", 
+        "operationId": "updateMembersCustomBoardBackgroundsByIdMemberByIdBoardBackground", 
+        "summary": "updateMembersCustomBoardBackgroundsByIdMemberByIdBoardBackground()", 
         "parameters": [
           {
             "description": "The id of the background to update", 
@@ -7740,8 +7740,8 @@
             ]
           }
         ], 
-        "operationId": "updateCardsStickersByCard", 
-        "summary": "updateCardsStickersByCard()", 
+        "operationId": "addCardsStickersByCard", 
+        "summary": "addCardsStickersByCard()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -7871,8 +7871,8 @@
             ]
           }
         ], 
-        "operationId": "addWebhooksDescriptionByIdWebhook", 
-        "summary": "addWebhooksDescriptionByIdWebhook()", 
+        "operationId": "updateWebhooksDescriptionByIdWebhook", 
+        "summary": "updateWebhooksDescriptionByIdWebhook()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -7922,8 +7922,8 @@
             ]
           }
         ], 
-        "operationId": "addOrganizationsMembersDeactivatedByIdOrgByIdMember", 
-        "summary": "addOrganizationsMembersDeactivatedByIdOrgByIdMember()", 
+        "operationId": "updateOrganizationsMembersDeactivatedByIdOrgByIdMember", 
+        "summary": "updateOrganizationsMembersDeactivatedByIdOrgByIdMember()", 
         "parameters": [
           {
             "description": "An id, username, or organization name", 
@@ -8055,8 +8055,8 @@
             ]
           }
         ], 
-        "operationId": "addMembersSavedSearchesByIdMemberByIdSavedSearch", 
-        "summary": "addMembersSavedSearchesByIdMemberByIdSavedSearch()", 
+        "operationId": "updateMembersSavedSearchesByIdMemberByIdSavedSearch", 
+        "summary": "updateMembersSavedSearchesByIdMemberByIdSavedSearch()", 
         "parameters": [
           {
             "description": "A non-empty string with at least one non-space character", 
@@ -8291,8 +8291,8 @@
             ]
           }
         ], 
-        "operationId": "addOrganizationsPrefsAssociatedDomainByIdOrg", 
-        "summary": "addOrganizationsPrefsAssociatedDomainByIdOrg()", 
+        "operationId": "updateOrganizationsPrefsAssociatedDomainByIdOrg", 
+        "summary": "updateOrganizationsPrefsAssociatedDomainByIdOrg()", 
         "parameters": [
           {
             "description": "The google apps domain to link this org to.", 
@@ -8408,8 +8408,8 @@
             ]
           }
         ], 
-        "operationId": "updateOrganizationsLogoByIdOrg", 
-        "summary": "updateOrganizationsLogoByIdOrg()", 
+        "operationId": "addOrganizationsLogoByIdOrg", 
+        "summary": "addOrganizationsLogoByIdOrg()", 
         "parameters": [
           {
             "description": "A file", 
@@ -8475,8 +8475,8 @@
             ]
           }
         ], 
-        "operationId": "addOrganizationsPrefsExternalMembersDisabledByIdOrg", 
-        "summary": "addOrganizationsPrefsExternalMembersDisabledByIdOrg()", 
+        "operationId": "updateOrganizationsPrefsExternalMembersDisabledByIdOrg", 
+        "summary": "updateOrganizationsPrefsExternalMembersDisabledByIdOrg()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -8593,8 +8593,8 @@
             ]
           }
         ], 
-        "operationId": "updateBoards", 
-        "summary": "updateBoards()", 
+        "operationId": "addBoards", 
+        "summary": "addBoards()", 
         "parameters": [
           {
             "description": "a string with a length from 1 to 16384", 
@@ -8724,8 +8724,8 @@
             ]
           }
         ], 
-        "operationId": "updateMembersSavedSearchesByIdMember", 
-        "summary": "updateMembersSavedSearchesByIdMember()", 
+        "operationId": "addMembersSavedSearchesByIdMember", 
+        "summary": "addMembersSavedSearchesByIdMember()", 
         "parameters": [
           {
             "description": "A non-empty string with at least one non-space character", 
@@ -8955,8 +8955,8 @@
             ]
           }
         ], 
-        "operationId": "addOrganizationsDisplayNameByIdOrg", 
-        "summary": "addOrganizationsDisplayNameByIdOrg()", 
+        "operationId": "updateOrganizationsDisplayNameByIdOrg", 
+        "summary": "updateOrganizationsDisplayNameByIdOrg()", 
         "parameters": [
           {
             "description": "A string with a length of at least 1.  Cannot begin or end with a space.", 
@@ -9006,8 +9006,8 @@
             ]
           }
         ], 
-        "operationId": "addMembersSavedSearchesQueryByIdMemberByIdSavedSearch", 
-        "summary": "addMembersSavedSearchesQueryByIdMemberByIdSavedSearch()", 
+        "operationId": "updateMembersSavedSearchesQueryByIdMemberByIdSavedSearch", 
+        "summary": "updateMembersSavedSearchesQueryByIdMemberByIdSavedSearch()", 
         "parameters": [
           {
             "description": "An id", 
@@ -9089,8 +9089,8 @@
             ]
           }
         ], 
-        "operationId": "addOrganizationsPrefsPermissionLevelByIdOrg", 
-        "summary": "addOrganizationsPrefsPermissionLevelByIdOrg()", 
+        "operationId": "updateOrganizationsPrefsPermissionLevelByIdOrg", 
+        "summary": "updateOrganizationsPrefsPermissionLevelByIdOrg()", 
         "parameters": [
           {
             "description": "One of: private or public", 
@@ -9140,8 +9140,8 @@
             ]
           }
         ], 
-        "operationId": "updateWebhooks", 
-        "summary": "updateWebhooks()", 
+        "operationId": "addWebhooks", 
+        "summary": "addWebhooks()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -9233,8 +9233,8 @@
             ]
           }
         ], 
-        "operationId": "addMembersAvatarSourceByIdMember", 
-        "summary": "addMembersAvatarSourceByIdMember()", 
+        "operationId": "updateMembersAvatarSourceByIdMember", 
+        "summary": "updateMembersAvatarSourceByIdMember()", 
         "parameters": [
           {
             "description": "One of: gravatar, none or upload", 
@@ -9284,8 +9284,8 @@
             ]
           }
         ], 
-        "operationId": "addMembersInitialsByIdMember", 
-        "summary": "addMembersInitialsByIdMember()", 
+        "operationId": "updateMembersInitialsByIdMember", 
+        "summary": "updateMembersInitialsByIdMember()", 
         "parameters": [
           {
             "description": "A string with a length from 1 to 4.  Cannot begin or end with a space", 
@@ -9745,8 +9745,8 @@
             ]
           }
         ], 
-        "operationId": "addWebhooks", 
-        "summary": "addWebhooks()", 
+        "operationId": "updateWebhooks", 
+        "summary": "updateWebhooks()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -9788,8 +9788,8 @@
             ]
           }
         ], 
-        "operationId": "addMembersUsernameByIdMember", 
-        "summary": "addMembersUsernameByIdMember()", 
+        "operationId": "updateMembersUsernameByIdMember", 
+        "summary": "updateMembersUsernameByIdMember()", 
         "parameters": [
           {
             "description": "A string with a length of at least 3.  Only lowercase letters, underscores, and numbers are allowed.  Must be unique.", 
@@ -9839,8 +9839,8 @@
             ]
           }
         ], 
-        "operationId": "addActionsByIdAction", 
-        "summary": "addActionsByIdAction()", 
+        "operationId": "updateActionsByIdAction", 
+        "summary": "updateActionsByIdAction()", 
         "parameters": [
           {
             "description": "a string with a length from 1 to 16384", 
@@ -10002,8 +10002,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsLabelNamesYellowByIdBoard", 
-        "summary": "addBoardsLabelNamesYellowByIdBoard()", 
+        "operationId": "updateBoardsLabelNamesYellowByIdBoard", 
+        "summary": "updateBoardsLabelNamesYellowByIdBoard()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -10520,8 +10520,8 @@
             ]
           }
         ], 
-        "operationId": "updateNotificationsAllRead", 
-        "summary": "updateNotificationsAllRead()", 
+        "operationId": "addNotificationsAllRead", 
+        "summary": "addNotificationsAllRead()", 
         "parameters": [], 
         "tags": [
           "notification"
@@ -10588,8 +10588,8 @@
             ]
           }
         ], 
-        "operationId": "addCardsIdListByCard", 
-        "summary": "addCardsIdListByCard()", 
+        "operationId": "updateCardsIdListByCard", 
+        "summary": "updateCardsIdListByCard()", 
         "parameters": [
           {
             "description": "id of the list the card should be moved to", 
@@ -10639,8 +10639,8 @@
             ]
           }
         ], 
-        "operationId": "addCardsChecklistCheckItemStateByCardByIdChecklistByIdCheckItem", 
-        "summary": "addCardsChecklistCheckItemStateByCardByIdChecklistByIdCheckItem()", 
+        "operationId": "updateCardsChecklistCheckItemStateByCardByIdChecklistByIdCheckItem", 
+        "summary": "updateCardsChecklistCheckItemStateByCardByIdChecklistByIdCheckItem()", 
         "parameters": [
           {
             "description": "The id of the checklist.", 
@@ -11049,8 +11049,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsMyPrefsShowSidebarBoardActionsByIdBoard", 
-        "summary": "addBoardsMyPrefsShowSidebarBoardActionsByIdBoard()", 
+        "operationId": "updateBoardsMyPrefsShowSidebarBoardActionsByIdBoard", 
+        "summary": "updateBoardsMyPrefsShowSidebarBoardActionsByIdBoard()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -11100,8 +11100,8 @@
             ]
           }
         ], 
-        "operationId": "addNotificationsUnreadByIdNotification", 
-        "summary": "addNotificationsUnreadByIdNotification()", 
+        "operationId": "updateNotificationsUnreadByIdNotification", 
+        "summary": "updateNotificationsUnreadByIdNotification()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -11151,8 +11151,8 @@
             ]
           }
         ], 
-        "operationId": "addMembersByIdMember", 
-        "summary": "addMembersByIdMember()", 
+        "operationId": "updateMembersByIdMember", 
+        "summary": "updateMembersByIdMember()", 
         "parameters": [
           {
             "description": "A string with a length of at least 1.  Cannot begin or end with a space.", 
@@ -11790,8 +11790,8 @@
             ]
           }
         ], 
-        "operationId": "updateChecklists", 
-        "summary": "updateChecklists()", 
+        "operationId": "addChecklists", 
+        "summary": "addChecklists()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -11899,8 +11899,8 @@
             ]
           }
         ], 
-        "operationId": "updateLabels", 
-        "summary": "updateLabels()", 
+        "operationId": "addLabels", 
+        "summary": "addLabels()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -11942,8 +11942,8 @@
             ]
           }
         ], 
-        "operationId": "addChecklistsPosByIdChecklist", 
-        "summary": "addChecklistsPosByIdChecklist()", 
+        "operationId": "updateChecklistsPosByIdChecklist", 
+        "summary": "updateChecklistsPosByIdChecklist()", 
         "parameters": [
           {
             "description": "A position. top , bottom , or a positive number.", 
@@ -11993,8 +11993,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsPrefsCalendarFeedEnabledByIdBoard", 
-        "summary": "addBoardsPrefsCalendarFeedEnabledByIdBoard()", 
+        "operationId": "updateBoardsPrefsCalendarFeedEnabledByIdBoard", 
+        "summary": "updateBoardsPrefsCalendarFeedEnabledByIdBoard()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -12044,8 +12044,8 @@
             ]
           }
         ], 
-        "operationId": "updateMembersBoardStarsByIdMember", 
-        "summary": "updateMembersBoardStarsByIdMember()", 
+        "operationId": "addMembersBoardStarsByIdMember", 
+        "summary": "addMembersBoardStarsByIdMember()", 
         "parameters": [
           {
             "description": "The id of the board to star", 
@@ -12118,8 +12118,8 @@
             ]
           }
         ], 
-        "operationId": "addOrganizationsPrefsGoogleAppsVersionByIdOrg", 
-        "summary": "addOrganizationsPrefsGoogleAppsVersionByIdOrg()", 
+        "operationId": "updateOrganizationsPrefsGoogleAppsVersionByIdOrg", 
+        "summary": "updateOrganizationsPrefsGoogleAppsVersionByIdOrg()", 
         "parameters": [
           {
             "description": "a number from 1 to 2", 
@@ -12236,8 +12236,8 @@
             ]
           }
         ], 
-        "operationId": "addMembersBoardStarsIdBoardByIdMemberByIdBoardStar", 
-        "summary": "addMembersBoardStarsIdBoardByIdMemberByIdBoardStar()", 
+        "operationId": "updateMembersBoardStarsIdBoardByIdMemberByIdBoardStar", 
+        "summary": "updateMembersBoardStarsIdBoardByIdMemberByIdBoardStar()", 
         "parameters": [
           {
             "description": "An id", 
@@ -12319,8 +12319,8 @@
             ]
           }
         ], 
-        "operationId": "addSessionsStatusByIdSession", 
-        "summary": "addSessionsStatusByIdSession()", 
+        "operationId": "updateSessionsStatusByIdSession", 
+        "summary": "updateSessionsStatusByIdSession()", 
         "parameters": [
           {
             "description": "One of: active, disconnected or idle", 
@@ -12378,8 +12378,8 @@
             ]
           }
         ], 
-        "operationId": "updateBoardsChecklistsByIdBoard", 
-        "summary": "updateBoardsChecklistsByIdBoard()", 
+        "operationId": "addBoardsChecklistsByIdBoard", 
+        "summary": "addBoardsChecklistsByIdBoard()", 
         "parameters": [
           {
             "description": "a string with a length from 1 to 16384", 
@@ -12517,8 +12517,8 @@
             ]
           }
         ], 
-        "operationId": "addMembersBioByIdMember", 
-        "summary": "addMembersBioByIdMember()", 
+        "operationId": "updateMembersBioByIdMember", 
+        "summary": "updateMembersBioByIdMember()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -12809,8 +12809,8 @@
             ]
           }
         ], 
-        "operationId": "addMembersBoardStarsPosByIdMemberByIdBoardStar", 
-        "summary": "addMembersBoardStarsPosByIdMemberByIdBoardStar()", 
+        "operationId": "updateMembersBoardStarsPosByIdMemberByIdBoardStar", 
+        "summary": "updateMembersBoardStarsPosByIdMemberByIdBoardStar()", 
         "parameters": [
           {
             "description": "An id", 
@@ -12892,8 +12892,8 @@
             ]
           }
         ], 
-        "operationId": "addListsPosByIdList", 
-        "summary": "addListsPosByIdList()", 
+        "operationId": "updateListsPosByIdList", 
+        "summary": "updateListsPosByIdList()", 
         "parameters": [
           {
             "description": "A position. top , bottom , or a positive number.", 
@@ -13005,7 +13005,7 @@
         "tags": [
           "card"
         ], 
-        "summary": "addCardsActionsCommentsByCardByIdAction()", 
+        "summary": "updateCardsActionsCommentsByCardByIdAction()", 
         "security": [
           {
             "trello_auth": [
@@ -13014,7 +13014,7 @@
             ]
           }
         ], 
-        "operationId": "addCardsActionsCommentsByCardByIdAction"
+        "operationId": "updateCardsActionsCommentsByCardByIdAction"
       }, 
       "delete": {
         "description": "This can only be done by the original author of the comment, or someone with higher permissions than the original author.", 
@@ -13513,8 +13513,8 @@
             ]
           }
         ], 
-        "operationId": "updateListsCardsByIdList", 
-        "summary": "updateListsCardsByIdList()", 
+        "operationId": "addListsCardsByIdList", 
+        "summary": "addListsCardsByIdList()", 
         "parameters": [
           {
             "description": "a string with a length from 1 to 16384", 
@@ -13740,8 +13740,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsMembershipsByIdBoardByIdMembership", 
-        "summary": "addBoardsMembershipsByIdBoardByIdMembership()", 
+        "operationId": "updateBoardsMembershipsByIdBoardByIdMembership", 
+        "summary": "updateBoardsMembershipsByIdBoardByIdMembership()", 
         "parameters": [
           {
             "description": "An id", 
@@ -14074,8 +14074,8 @@
             ]
           }
         ], 
-        "operationId": "addCardsPosByCard", 
-        "summary": "addCardsPosByCard()", 
+        "operationId": "updateCardsPosByCard", 
+        "summary": "updateCardsPosByCard()", 
         "parameters": [
           {
             "description": "A position. top , bottom , or a positive number.", 
@@ -14125,8 +14125,8 @@
             ]
           }
         ], 
-        "operationId": "updateSessions", 
-        "summary": "updateSessions()", 
+        "operationId": "addSessions", 
+        "summary": "addSessions()", 
         "parameters": [
           {
             "description": "One of: active, disconnected or idle", 
@@ -14663,8 +14663,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsMyPrefsShowSidebarByIdBoard", 
-        "summary": "addBoardsMyPrefsShowSidebarByIdBoard()", 
+        "operationId": "updateBoardsMyPrefsShowSidebarByIdBoard", 
+        "summary": "updateBoardsMyPrefsShowSidebarByIdBoard()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -14714,8 +14714,8 @@
             ]
           }
         ], 
-        "operationId": "addOrganizationsMembershipsByIdOrgByIdMembership", 
-        "summary": "addOrganizationsMembershipsByIdOrgByIdMembership()", 
+        "operationId": "updateOrganizationsMembershipsByIdOrgByIdMembership", 
+        "summary": "updateOrganizationsMembershipsByIdOrgByIdMembership()", 
         "parameters": [
           {
             "description": "An id", 
@@ -14893,8 +14893,8 @@
             ]
           }
         ], 
-        "operationId": "addCardsChecklistCheckItemPosByCardByIdChecklistByIdCheckItem", 
-        "summary": "addCardsChecklistCheckItemPosByCardByIdChecklistByIdCheckItem()", 
+        "operationId": "updateCardsChecklistCheckItemPosByCardByIdChecklistByIdCheckItem", 
+        "summary": "updateCardsChecklistCheckItemPosByCardByIdChecklistByIdCheckItem()", 
         "parameters": [
           {
             "description": "The id of the checklist.", 
@@ -15008,8 +15008,8 @@
             ]
           }
         ], 
-        "operationId": "addCardsNameByCard", 
-        "summary": "addCardsNameByCard()", 
+        "operationId": "updateCardsNameByCard", 
+        "summary": "updateCardsNameByCard()", 
         "parameters": [
           {
             "description": "a string with a length from 1 to 16384", 
@@ -15059,8 +15059,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsNameByIdBoard", 
-        "summary": "addBoardsNameByIdBoard()", 
+        "operationId": "updateBoardsNameByIdBoard", 
+        "summary": "updateBoardsNameByIdBoard()", 
         "parameters": [
           {
             "description": "a string with a length from 1 to 16384", 
@@ -15110,8 +15110,8 @@
             ]
           }
         ], 
-        "operationId": "addListsClosedByIdList", 
-        "summary": "addListsClosedByIdList()", 
+        "operationId": "updateListsClosedByIdList", 
+        "summary": "updateListsClosedByIdList()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -15211,8 +15211,8 @@
             ]
           }
         ], 
-        "operationId": "updateOrganizations", 
-        "summary": "updateOrganizations()", 
+        "operationId": "addOrganizations", 
+        "summary": "addOrganizations()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -15262,8 +15262,8 @@
             ]
           }
         ], 
-        "operationId": "addCardsClosedByCard", 
-        "summary": "addCardsClosedByCard()", 
+        "operationId": "updateCardsClosedByCard", 
+        "summary": "updateCardsClosedByCard()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -15601,8 +15601,8 @@
             ]
           }
         ], 
-        "operationId": "updateChecklistsCheckItemsByIdChecklist", 
-        "summary": "updateChecklistsCheckItemsByIdChecklist()", 
+        "operationId": "addChecklistsCheckItemsByIdChecklist", 
+        "summary": "addChecklistsCheckItemsByIdChecklist()", 
         "parameters": [
           {
             "description": "a string with a length from 1 to 16384", 
@@ -15724,8 +15724,8 @@
             ]
           }
         ], 
-        "operationId": "addOrganizationsByIdOrg", 
-        "summary": "addOrganizationsByIdOrg()", 
+        "operationId": "updateOrganizationsByIdOrg", 
+        "summary": "updateOrganizationsByIdOrg()", 
         "parameters": [
           {
             "description": "An email address with optional expansion tokens", 
@@ -16119,8 +16119,8 @@
             ]
           }
         ], 
-        "operationId": "updateCardsChecklistCheckItemByCardByIdChecklist", 
-        "summary": "updateCardsChecklistCheckItemByCardByIdChecklist()", 
+        "operationId": "addCardsChecklistCheckItemByCardByIdChecklist", 
+        "summary": "addCardsChecklistCheckItemByCardByIdChecklist()", 
         "parameters": [
           {
             "description": "The id of the checklist.", 
@@ -16210,8 +16210,8 @@
             ]
           }
         ], 
-        "operationId": "addOrganizationsPrefsBoardVisibilityRestrictPublicByIdOrg", 
-        "summary": "addOrganizationsPrefsBoardVisibilityRestrictPublicByIdOrg()", 
+        "operationId": "updateOrganizationsPrefsBoardVisibilityRestrictPublicByIdOrg", 
+        "summary": "updateOrganizationsPrefsBoardVisibilityRestrictPublicByIdOrg()", 
         "parameters": [
           {
             "description": "One of: admin, none or org", 
@@ -16261,8 +16261,8 @@
             ]
           }
         ], 
-        "operationId": "updateBoardsCalendarKeyGenerateByIdBoard", 
-        "summary": "updateBoardsCalendarKeyGenerateByIdBoard()", 
+        "operationId": "addBoardsCalendarKeyGenerateByIdBoard", 
+        "summary": "addBoardsCalendarKeyGenerateByIdBoard()", 
         "parameters": [], 
         "tags": [
           "board"
@@ -16279,8 +16279,8 @@
             ]
           }
         ], 
-        "operationId": "updateCardsAttachmentsByCard", 
-        "summary": "updateCardsAttachmentsByCard()", 
+        "operationId": "addCardsAttachmentsByCard", 
+        "summary": "addCardsAttachmentsByCard()", 
         "parameters": [
           {
             "description": "A file", 
@@ -16477,8 +16477,8 @@
             ]
           }
         ], 
-        "operationId": "addActionsTextByIdAction", 
-        "summary": "addActionsTextByIdAction()", 
+        "operationId": "updateActionsTextByIdAction", 
+        "summary": "updateActionsTextByIdAction()", 
         "parameters": [
           {
             "description": "a string with a length from 1 to 16384", 
@@ -16586,8 +16586,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsMyPrefsShowSidebarMembersByIdBoard", 
-        "summary": "addBoardsMyPrefsShowSidebarMembersByIdBoard()", 
+        "operationId": "updateBoardsMyPrefsShowSidebarMembersByIdBoard", 
+        "summary": "updateBoardsMyPrefsShowSidebarMembersByIdBoard()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -16637,8 +16637,8 @@
             ]
           }
         ], 
-        "operationId": "updateBoardsEmailKeyGenerateByIdBoard", 
-        "summary": "updateBoardsEmailKeyGenerateByIdBoard()", 
+        "operationId": "addBoardsEmailKeyGenerateByIdBoard", 
+        "summary": "addBoardsEmailKeyGenerateByIdBoard()", 
         "parameters": [], 
         "tags": [
           "board"
@@ -16672,8 +16672,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsMyPrefsShowSidebarActivityByIdBoard", 
-        "summary": "addBoardsMyPrefsShowSidebarActivityByIdBoard()", 
+        "operationId": "updateBoardsMyPrefsShowSidebarActivityByIdBoard", 
+        "summary": "updateBoardsMyPrefsShowSidebarActivityByIdBoard()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -16943,8 +16943,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsMyPrefsIdEmailListByIdBoard", 
-        "summary": "addBoardsMyPrefsIdEmailListByIdBoard()", 
+        "operationId": "updateBoardsMyPrefsIdEmailListByIdBoard", 
+        "summary": "updateBoardsMyPrefsIdEmailListByIdBoard()", 
         "parameters": [
           {
             "description": "An id", 
@@ -17011,8 +17011,8 @@
             ]
           }
         ], 
-        "operationId": "addLabelsByIdLabel", 
-        "summary": "addLabelsByIdLabel()", 
+        "operationId": "updateLabelsByIdLabel", 
+        "summary": "updateLabelsByIdLabel()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -17134,8 +17134,8 @@
             ]
           }
         ], 
-        "operationId": "addOrganizationsPrefsBoardVisibilityRestrictOrgByIdOrg", 
-        "summary": "addOrganizationsPrefsBoardVisibilityRestrictOrgByIdOrg()", 
+        "operationId": "updateOrganizationsPrefsBoardVisibilityRestrictOrgByIdOrg", 
+        "summary": "updateOrganizationsPrefsBoardVisibilityRestrictOrgByIdOrg()", 
         "parameters": [
           {
             "description": "One of: admin, none or org", 
@@ -17185,8 +17185,8 @@
             ]
           }
         ], 
-        "operationId": "addCardsDescByCard", 
-        "summary": "addCardsDescByCard()", 
+        "operationId": "updateCardsDescByCard", 
+        "summary": "updateCardsDescByCard()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -17253,8 +17253,8 @@
             ]
           }
         ], 
-        "operationId": "addChecklistsByIdChecklist", 
-        "summary": "addChecklistsByIdChecklist()", 
+        "operationId": "updateChecklistsByIdChecklist", 
+        "summary": "updateChecklistsByIdChecklist()", 
         "parameters": [
           {
             "description": "a string with a length from 1 to 16384", 
@@ -17416,8 +17416,8 @@
             ]
           }
         ], 
-        "operationId": "addWebhooksIdModelByIdWebhook", 
-        "summary": "addWebhooksIdModelByIdWebhook()", 
+        "operationId": "updateWebhooksIdModelByIdWebhook", 
+        "summary": "updateWebhooksIdModelByIdWebhook()", 
         "parameters": [
           {
             "description": "id of the model to be monitored", 
@@ -17467,8 +17467,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsLabelNamesGreenByIdBoard", 
-        "summary": "addBoardsLabelNamesGreenByIdBoard()", 
+        "operationId": "updateBoardsLabelNamesGreenByIdBoard", 
+        "summary": "updateBoardsLabelNamesGreenByIdBoard()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -18017,8 +18017,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsDescByIdBoard", 
-        "summary": "addBoardsDescByIdBoard()", 
+        "operationId": "updateBoardsDescByIdBoard", 
+        "summary": "updateBoardsDescByIdBoard()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -18118,8 +18118,8 @@
             ]
           }
         ], 
-        "operationId": "updateCardsActionsCommentsByCard", 
-        "summary": "updateCardsActionsCommentsByCard()", 
+        "operationId": "addCardsActionsCommentsByCard", 
+        "summary": "addCardsActionsCommentsByCard()", 
         "parameters": [
           {
             "description": "a string with a length from 1 to 16384", 
@@ -18169,8 +18169,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsByIdBoard", 
-        "summary": "addBoardsByIdBoard()", 
+        "operationId": "updateBoardsByIdBoard", 
+        "summary": "updateBoardsByIdBoard()", 
         "parameters": [
           {
             "description": "a string with a length from 1 to 16384", 
@@ -18854,8 +18854,8 @@
             ]
           }
         ], 
-        "operationId": "addOrganizationsMembersByIdOrg", 
-        "summary": "addOrganizationsMembersByIdOrg()", 
+        "operationId": "updateOrganizationsMembersByIdOrg", 
+        "summary": "updateOrganizationsMembersByIdOrg()", 
         "parameters": [
           {
             "description": "An email address", 
@@ -18985,8 +18985,8 @@
             ]
           }
         ], 
-        "operationId": "updateLists", 
-        "summary": "updateLists()", 
+        "operationId": "addLists", 
+        "summary": "addLists()", 
         "parameters": [
           {
             "description": "a string with a length from 1 to 16384", 
@@ -19036,8 +19036,8 @@
             ]
           }
         ], 
-        "operationId": "addCardsLabelsByCard", 
-        "summary": "addCardsLabelsByCard()", 
+        "operationId": "updateCardsLabelsByCard", 
+        "summary": "updateCardsLabelsByCard()", 
         "parameters": [
           {
             "description": "all or a comma-separated list of: blue, green, orange, purple, red or yellow", 
@@ -19085,8 +19085,8 @@
             ]
           }
         ], 
-        "operationId": "updateCardsLabelsByCard", 
-        "summary": "updateCardsLabelsByCard()", 
+        "operationId": "addCardsLabelsByCard", 
+        "summary": "addCardsLabelsByCard()", 
         "parameters": [
           {
             "description": "A valid label color or null", 
@@ -19144,8 +19144,8 @@
             ]
           }
         ], 
-        "operationId": "addMembersFullNameByIdMember", 
-        "summary": "addMembersFullNameByIdMember()", 
+        "operationId": "updateMembersFullNameByIdMember", 
+        "summary": "updateMembersFullNameByIdMember()", 
         "parameters": [
           {
             "description": "A string with a length of at least 1.  Cannot begin or end with a space.", 
@@ -19502,8 +19502,8 @@
             ]
           }
         ], 
-        "operationId": "addCardsIdMembersByCard", 
-        "summary": "addCardsIdMembersByCard()", 
+        "operationId": "updateCardsIdMembersByCard", 
+        "summary": "updateCardsIdMembersByCard()", 
         "parameters": [
           {
             "description": "A comma-separated list of objectIds, 24-character hex strings", 
@@ -19551,8 +19551,8 @@
             ]
           }
         ], 
-        "operationId": "updateCardsIdMembersByCard", 
-        "summary": "updateCardsIdMembersByCard()", 
+        "operationId": "addCardsIdMembersByCard", 
+        "summary": "addCardsIdMembersByCard()", 
         "parameters": [
           {
             "description": "The id of the member to add to the card", 
@@ -19676,8 +19676,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsIdOrganizationByIdBoard", 
-        "summary": "addBoardsIdOrganizationByIdBoard()", 
+        "operationId": "updateBoardsIdOrganizationByIdBoard", 
+        "summary": "updateBoardsIdOrganizationByIdBoard()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -19777,8 +19777,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsPrefsVotingByIdBoard", 
-        "summary": "addBoardsPrefsVotingByIdBoard()", 
+        "operationId": "updateBoardsPrefsVotingByIdBoard", 
+        "summary": "updateBoardsPrefsVotingByIdBoard()", 
         "parameters": [
           {
             "description": "One of: disabled, members, observers, org or public", 
@@ -19828,8 +19828,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsLabelNamesBlueByIdBoard", 
-        "summary": "addBoardsLabelNamesBlueByIdBoard()", 
+        "operationId": "updateBoardsLabelNamesBlueByIdBoard", 
+        "summary": "updateBoardsLabelNamesBlueByIdBoard()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -19879,8 +19879,8 @@
             ]
           }
         ], 
-        "operationId": "updateMembersAvatarByIdMember", 
-        "summary": "updateMembersAvatarByIdMember()", 
+        "operationId": "addMembersAvatarByIdMember", 
+        "summary": "addMembersAvatarByIdMember()", 
         "parameters": [
           {
             "description": "A file", 
@@ -19930,8 +19930,8 @@
             ]
           }
         ], 
-        "operationId": "updateMembersCustomEmojiByIdMember", 
-        "summary": "updateMembersCustomEmojiByIdMember()", 
+        "operationId": "addMembersCustomEmojiByIdMember", 
+        "summary": "addMembersCustomEmojiByIdMember()", 
         "parameters": [
           {
             "description": "A file", 
@@ -20038,8 +20038,8 @@
             ]
           }
         ], 
-        "operationId": "addWebhooksActiveByIdWebhook", 
-        "summary": "addWebhooksActiveByIdWebhook()", 
+        "operationId": "updateWebhooksActiveByIdWebhook", 
+        "summary": "updateWebhooksActiveByIdWebhook()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -20089,8 +20089,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsLabelNamesPurpleByIdBoard", 
-        "summary": "addBoardsLabelNamesPurpleByIdBoard()", 
+        "operationId": "updateBoardsLabelNamesPurpleByIdBoard", 
+        "summary": "updateBoardsLabelNamesPurpleByIdBoard()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -20146,7 +20146,7 @@
           {
             "description": "a number from 1 to 20", 
             "default": "8", 
-            "required": false, 
+            "required": "false", 
             "in": "query", 
             "type": "string", 
             "name": "limit"
@@ -20154,7 +20154,7 @@
           {
             "description": "An id, or null", 
             "default": "undefined", 
-            "required": false, 
+            "required": "false", 
             "in": "query", 
             "type": "string", 
             "name": "idBoard"
@@ -20162,7 +20162,7 @@
           {
             "description": "An id, or null", 
             "default": "undefined", 
-            "required": false, 
+            "required": "false", 
             "in": "query", 
             "type": "string", 
             "name": "idOrganization"
@@ -20170,7 +20170,7 @@
           {
             "description": "A boolean", 
             "default": "false", 
-            "required": false, 
+            "required": "false", 
             "in": "query", 
             "type": "string", 
             "name": "onlyOrgMembers"
@@ -20191,8 +20191,8 @@
             ]
           }
         ], 
-        "operationId": "addOrganizationsPrefsBoardVisibilityRestrictPrivateByIdOrg", 
-        "summary": "addOrganizationsPrefsBoardVisibilityRestrictPrivateByIdOrg()", 
+        "operationId": "updateOrganizationsPrefsBoardVisibilityRestrictPrivateByIdOrg", 
+        "summary": "updateOrganizationsPrefsBoardVisibilityRestrictPrivateByIdOrg()", 
         "parameters": [
           {
             "description": "One of: admin, none or org", 
@@ -20528,8 +20528,8 @@
             ]
           }
         ], 
-        "operationId": "updateCardsChecklistsByCard", 
-        "summary": "updateCardsChecklistsByCard()", 
+        "operationId": "addCardsChecklistsByCard", 
+        "summary": "addCardsChecklistsByCard()", 
         "parameters": [
           {
             "description": "The id of the checklist to add to the card, or null to create a new one.", 
@@ -20683,8 +20683,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsLabelNamesRedByIdBoard", 
-        "summary": "addBoardsLabelNamesRedByIdBoard()", 
+        "operationId": "updateBoardsLabelNamesRedByIdBoard", 
+        "summary": "updateBoardsLabelNamesRedByIdBoard()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -20801,8 +20801,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsPrefsPermissionLevelByIdBoard", 
-        "summary": "addBoardsPrefsPermissionLevelByIdBoard()", 
+        "operationId": "updateBoardsPrefsPermissionLevelByIdBoard", 
+        "summary": "updateBoardsPrefsPermissionLevelByIdBoard()", 
         "parameters": [
           {
             "description": "One of: org, private or public", 
@@ -20852,8 +20852,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsLabelNamesOrangeByIdBoard", 
-        "summary": "addBoardsLabelNamesOrangeByIdBoard()", 
+        "operationId": "updateBoardsLabelNamesOrangeByIdBoard", 
+        "summary": "updateBoardsLabelNamesOrangeByIdBoard()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -20903,8 +20903,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsPrefsSelfJoinByIdBoard", 
-        "summary": "addBoardsPrefsSelfJoinByIdBoard()", 
+        "operationId": "updateBoardsPrefsSelfJoinByIdBoard", 
+        "summary": "updateBoardsPrefsSelfJoinByIdBoard()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -20954,8 +20954,8 @@
             ]
           }
         ], 
-        "operationId": "addMembersPrefsColorBlindByIdMember", 
-        "summary": "addMembersPrefsColorBlindByIdMember()", 
+        "operationId": "updateMembersPrefsColorBlindByIdMember", 
+        "summary": "updateMembersPrefsColorBlindByIdMember()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -21079,8 +21079,8 @@
             ]
           }
         ], 
-        "operationId": "addListsNameByIdList", 
-        "summary": "addListsNameByIdList()", 
+        "operationId": "updateListsNameByIdList", 
+        "summary": "updateListsNameByIdList()", 
         "parameters": [
           {
             "description": "a string with a length from 1 to 16384", 
@@ -21346,8 +21346,8 @@
             ]
           }
         ], 
-        "operationId": "addMembersBoardStarsByIdMemberByIdBoardStar", 
-        "summary": "addMembersBoardStarsByIdMemberByIdBoardStar()", 
+        "operationId": "updateMembersBoardStarsByIdMemberByIdBoardStar", 
+        "summary": "updateMembersBoardStarsByIdMemberByIdBoardStar()", 
         "parameters": [
           {
             "description": "An id", 
@@ -21649,8 +21649,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsClosedByIdBoard", 
-        "summary": "addBoardsClosedByIdBoard()", 
+        "operationId": "updateBoardsClosedByIdBoard", 
+        "summary": "updateBoardsClosedByIdBoard()", 
         "parameters": [
           {
             "description": " true or false", 
@@ -21758,8 +21758,8 @@
             ]
           }
         ], 
-        "operationId": "addCardsChecklistCheckItemByCardByIdChecklistCurrentByIdCheckItem", 
-        "summary": "addCardsChecklistCheckItemByCardByIdChecklistCurrentByIdCheckItem()", 
+        "operationId": "updateCardsChecklistCheckItemByCardByIdChecklistCurrentByIdCheckItem", 
+        "summary": "updateCardsChecklistCheckItemByCardByIdChecklistCurrentByIdCheckItem()", 
         "parameters": [
           {
             "description": "The id of the checklist.", 
@@ -21947,8 +21947,8 @@
             ]
           }
         ], 
-        "operationId": "addWebhooksByIdWebhook", 
-        "summary": "addWebhooksByIdWebhook()", 
+        "operationId": "updateWebhooksByIdWebhook", 
+        "summary": "updateWebhooksByIdWebhook()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -22053,8 +22053,8 @@
             ]
           }
         ], 
-        "operationId": "addBoardsMyPrefsEmailPositionByIdBoard", 
-        "summary": "addBoardsMyPrefsEmailPositionByIdBoard()", 
+        "operationId": "updateBoardsMyPrefsEmailPositionByIdBoard", 
+        "summary": "updateBoardsMyPrefsEmailPositionByIdBoard()", 
         "parameters": [
           {
             "description": "One of: bottom or top", 
@@ -22104,8 +22104,8 @@
             ]
           }
         ], 
-        "operationId": "addTokensWebhooksByToken", 
-        "summary": "addTokensWebhooksByToken()", 
+        "operationId": "updateTokensWebhooksByToken", 
+        "summary": "updateTokensWebhooksByToken()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 
@@ -22169,8 +22169,8 @@
             ]
           }
         ], 
-        "operationId": "updateTokensWebhooksByToken", 
-        "summary": "updateTokensWebhooksByToken()", 
+        "operationId": "addTokensWebhooksByToken", 
+        "summary": "addTokensWebhooksByToken()", 
         "parameters": [
           {
             "description": "a string with a length from 0 to 16384", 

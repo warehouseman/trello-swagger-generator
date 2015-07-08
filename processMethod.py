@@ -23,9 +23,9 @@ def prepareNote(soup) :
       else :
         phrase = notes_line.strip()
         aryNotes.append(phrase)
-        
+
     notes_line = notes_line.next_sibling
-      
+
   return ' '.join(aryNotes)
 
 def fixFieldName(aField) :  # get first full word and if _id is a suffix make it a prefix
@@ -51,7 +51,7 @@ def preparePath(path, basePath) :  # detect/prepare and flag the contained path 
 
 
 
-http2crud = {'get' : 'get', 'put' : 'add', 'post' : 'update', 'delete' : 'delete'}
+http2crud = {'get' : 'get', 'post' : 'add', 'put' : 'update', 'delete' : 'delete'}
 def makeOperationId(method, defPath) :  # get first full word and if _id is a suffix make it a prefix
   bits = defPath["namePath"].split('/')
   parms = []
@@ -76,7 +76,7 @@ def makeOperationId(method, defPath) :  # get first full word and if _id is a su
 def processMethod(soup, swagger, entity):
 
 
-  '''  
+  '''
   print "# {}".format(soup)
   sys.exit()
   '''
@@ -97,7 +97,7 @@ def processMethod(soup, swagger, entity):
     swagger['paths'][namePath][nameMethod]['description'] = prepareNote(soup.ul.li)
 #    print swagger['paths'][namePath][nameMethod]['description']
     soup.ul.li.extract()
-        
+
   if REQUIRED_PERMISSIONS in soup.ul.li.next_element :
     permission = ' and'.join(''.join(soup.ul.li.stripped_strings).replace(REQUIRED_PERMISSIONS, '').rsplit(',', 1))
     auth = ["read:boards"]
@@ -105,7 +105,7 @@ def processMethod(soup, swagger, entity):
     swagger['paths'][namePath][nameMethod]['security'] = [ { "trello_auth": auth } ]
 #    print swagger['paths'][namePath][nameMethod]['security']
     soup.ul.li.extract()
-  
+
   arguments = soup.ul.li
 
   '''
@@ -113,19 +113,19 @@ def processMethod(soup, swagger, entity):
   print arguments
   print ' ---- '
   '''
-  
+
   swagger['paths'][namePath][nameMethod]['parameters'] = []
   if arguments.ul != None :
     processArguments(arguments, swagger['paths'][namePath][nameMethod], defPath["fields"])
-      
+
   return
-  
 
 
-#  -   -   -   -   -   -   -   -   -   -   -   
+
+#  -   -   -   -   -   -   -   -   -   -   -
 #  Main routine (for testing)
 def main():
-  
+
   from test.testdataMethod import test_values
   from test.testdataMethod import swagger
   from test.testdataMethod import sampleAPI
