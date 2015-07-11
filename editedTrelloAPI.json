@@ -6999,20 +6999,14 @@
         "summary": "addBoardsListsByIdBoard()",
         "parameters": [
           {
+            "in": "body",
+            "name": "body",
             "description": "a string with a length from 1 to 16384",
             "default": "undefined",
-            "required": "true",
-            "in": "query",
-            "type": "string",
-            "name": "name"
-          },
-          {
-            "description": "A position. top , bottom , or a positive number.",
-            "default": "top",
-            "required": "false",
-            "in": "query",
-            "type": "string",
-            "name": "pos"
+            "required": true,
+            "schema":{
+              "$ref":"#/definitions/List"
+            }
           },
           {
             "description": "board_id",
@@ -22244,7 +22238,7 @@
   },
   "host": "api.trello.com",
   "schemes": [
-    "http"
+    "https"
   ],
   "tags": [
     {
@@ -22323,6 +22317,23 @@
       "scopes": {
         "write:boards": "modify any of the boards in your account",
         "read:boards": "read any of the boards in your account"
+      }
+    }
+  },
+  "definitions":{
+    "List":{
+      "type":"object",
+      "properties":{
+        "name":{
+          "type":"string"
+        },
+        "pos":{
+          "type":"string",
+          "default":"top"
+        }
+      },
+      "xml":{
+        "name":"Order"
       }
     }
   }
