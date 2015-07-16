@@ -10,6 +10,8 @@ import re
 REQUIRED_PERMISSIONS="Required permissions:"
 NOTES = "Notes:"
 
+debugPrint = False
+
 #  Methods
 def prepareNote(soup) :
   notes_line = soup.next_element
@@ -69,12 +71,11 @@ def makeOperationId(method, defPath) :  # get first full word and if _id is a su
       parmClause = 'By{}'.format(parmClause)
     operationId = '{}{}{}'.format(http2crud[method], ''.join(nouns), parmClause)
 
-  print 'Operation Id : {}\n\n'.format(operationId)
+  if debugPrint : print 'Operation Id : {}\n\n'.format(operationId)
   return operationId
 
 
 def processMethod(soup, swagger, entity):
-
 
   '''
   print "# {}".format(soup)
@@ -83,10 +84,24 @@ def processMethod(soup, swagger, entity):
   defPath = preparePath(soup.h2.span.text, swagger["basePath"])
   namePath = defPath["namePath"]
   nameMethod = soup.h2.next_element.lower().strip()
-  print "Method : {}, Path : {}".format(nameMethod, namePath)
 
-  if   namePath not in swagger['paths']           :  swagger['paths'][namePath]             = {}
-  if nameMethod not in swagger['paths'][namePath] :  swagger['paths'][namePath][nameMethod] = {"tags" : [entity]}
+
+  cursor = {'entity' : entity, 'path' : namePath, 'method' : nameMethod}
+
+  if cursor['entity'] == "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXboard" \
+    and cursor['method'] != "get":
+      debugPrint = True
+  else:
+      debugPrint = False
+
+
+  if debugPrint : print "Method : {}, Path : {}".format(nameMethod, namePath)
+
+  if   namePath not in swagger['paths'] :
+                                swagger['paths'][namePath] = {}
+  if nameMethod not in swagger['paths'][namePath] :
+                    swagger['paths'][namePath][nameMethod] = {"tags" : [entity]}
+
 
   swagger['paths'][namePath][nameMethod]['operationId'] = makeOperationId(nameMethod, defPath)
   swagger['paths'][namePath][nameMethod]['summary'] = '{}()'.format(swagger['paths'][namePath][nameMethod]['operationId'])
@@ -116,7 +131,8 @@ def processMethod(soup, swagger, entity):
 
   swagger['paths'][namePath][nameMethod]['parameters'] = []
   if arguments.ul != None :
-    processArguments(arguments, swagger['paths'][namePath][nameMethod], defPath["fields"])
+#    processArguments(arguments, swagger['paths'][namePath][nameMethod], defPath["fields"], cursor)
+    processArguments(arguments, swagger, defPath["fields"], cursor)
 
   return
 

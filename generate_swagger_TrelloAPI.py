@@ -7,6 +7,7 @@ import sys
 
 #  Constants
 TRELLO_JSON_FILE="TrelloAPI.json"
+API_DOC = "https://trello.com/docs/api"
 
 # Methods
 def processTrelloEntity(soup, swagger, numEntity):
@@ -23,22 +24,22 @@ def processTrelloEntity(soup, swagger, numEntity):
   '''
   index = soup.html.body.find(class_='section', id=entity)
   for div in index.find_all("div", recursive=False) :
-    print "Entity {}  --  {}".format(entity, div['id'])
+#    print "Entity {}  --  {}".format(entity, div['id'])
     processMethod(div, swagger, entity)
-    
+
   return
-  
+
 def processTrelloAPIIndex(soup, swagger):
-  
+
   for link in soup.find_all(class_='toctree-l1') :
     swagger['tags'].append(
     {
         "name": link.a.string
-      , "description": "{}/{}".format(swagger['info']['api_documentation'], link.a['href'])
+      , "description": "{}/{}".format(API_DOC, link.a['href'])
     })
-      
+
   return
-  
+
 def processTrelloToC(swagger):
 
   idx = 0
@@ -51,11 +52,11 @@ def processTrelloToC(swagger):
         , idx
       )
     idx = idx + 1
-    
-  return
-  
 
-#  -   -   -   -   -   -   -   -   -   -   -   
+  return
+
+
+#  -   -   -   -   -   -   -   -   -   -   -
 #  Main routine (for testing)
 def main():
 
@@ -64,9 +65,14 @@ def main():
     "info": {
       "version": "1.0",
       "title": "Trello API",
-      "description": "This document describes the REST API of Trello as published by Trello.com. <a href='https://trello.com/docs/index.html' target='_blank'>Official Documentation</a>",
+      "description": "This document describes the REST API of Trello as "
+         + "published by Trello.com."
+         + "\n - <a href='https://trello.com/docs/index.html' target='_blank'>"
+         + "Official Documentation</a>"
+         + "\n - <a href='" + API_DOC + "' target='_blank'>"
+         + "The HTML pages that were scraped in order to "
+         + "generate this specification.</a>",
       "termsOfService": "https://trello.com/legal",
-      "api_documentation": "https://trello.com/docs/api",
       "contact": {
         "name": "Trello",
         "url": "https://trello.com/home"
@@ -76,7 +82,7 @@ def main():
         "url": "https://trello.com/legal"
       }
     },
-    "host": "api.trello.com",
+    "host": "trello.com",
     "tags": [
     ],
     "securityDefinitions": {
@@ -95,28 +101,51 @@ def main():
         "in": "header"
       }
     },
+    "definitions": {
+    },
     "paths": {
     },
     "basePath": "/1",
     "schemes": [
-      "http"
+      "https"
     ],
-    
+
   }
-  
-  soup = BeautifulSoup(urllib2.urlopen(swagger['info']['api_documentation']).read())
+
+  soup = BeautifulSoup(urllib2.urlopen(API_DOC).read())
   processTrelloAPIIndex(soup, swagger)
   processTrelloToC(swagger)
-  
+
   print(">> - - - - - - - - - - ! - - - - - - - - - - -<<")
   print "JSON {} written to {}".format(json.dumps(swagger['info']['title']), TRELLO_JSON_FILE)
   print("<< - - - - - - - - - - - - - - - - - - - - - ->>")
 
   # now write output to a file
   TrelloAPI_json = open(TRELLO_JSON_FILE, "w")
+
   # magic happens here to make it pretty-printed
-  TrelloAPI_json.write(json.dumps(swagger, indent=2, sort_keys=False))
+  prettySpec = json.dumps(swagger, indent=2, sort_keys=False)
+
+  # replace all "false" with false and all "true" with true
+  finalSpec = prettySpec.replace("\"false\"", "false").replace("\"true\"", "true")
+
+  TrelloAPI_json.write(prettySpec)
   TrelloAPI_json.close()
-  
+
 if __name__ == "__main__": main()
 
+      # "List":{
+      #   "type":"object",
+      #   "properties":{
+      #     "name":{
+      #       "type":"string"
+      #     },
+      #     "pos":{
+      #       "type":"string",
+      #       "default":"top"
+      #     }
+      #   },
+      #   "xml":{
+      #     "name":"Order"
+      #   }
+      # }

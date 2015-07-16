@@ -12,15 +12,18 @@ def processDefaults(soup, swagger):
     default = ' and'.join(', '.join(string.split(',')).rsplit(',', 1))
 
   swagger['default'] = default
+  if  "true" in default : swagger['default'] = True
+  if "false" in default : swagger['default'] = False
+
   return
-  
-  
-#  -   -   -   -   -   -   -   -   -   -   -   
+
+
+#  -   -   -   -   -   -   -   -   -   -   -
 #  Main routine (for testing)
 def main():
   from test.testdataDefaults import test_values
   from test.testdataDefaults import swagger
-  
+
   idx = 0
   for frag in test_values :
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
@@ -30,7 +33,7 @@ def main():
       processDefaults(soup.body.li, swagger)
       print "swagger = {}".format(swagger)
     idx = idx + 1
-    
+
   print(">>~~~~~~~~~~~~~~~~~~~~~~~~~<<")
 
 
