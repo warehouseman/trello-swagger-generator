@@ -21,7 +21,7 @@ def processArguments(soup, swggr, path_fields, cursor):
   sys.exit()
   '''
 
-  if cursor['path'] in ["/members/{idMember}/boardStars/{idBoardStar}/idBoard"] :
+  if cursor['path'] in ["/xcards/{card}"] :
     debugPrint = True
   else :
     debugPrint = False

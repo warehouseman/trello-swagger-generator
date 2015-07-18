@@ -30,11 +30,17 @@ def prepareNote(soup) :
 
   return ' '.join(aryNotes)
 
-def fixFieldName(aField) :  # get first full word and if _id is a suffix make it a prefix
-  field = aField.split()[0]
+def fixFieldName(theField) :  # get first full word and if _id is a suffix make it a prefix
+  split_field = theField.split()
+
+  field = split_field[0]
   if "_id" in field :
     field = field.replace('_id', '')
     field = 'id{}'.format(field.title())
+
+  if len(split_field) > 1 and "id" in split_field[1] :
+    field = 'id{}'.format(field.title())
+
   return field
 
 def preparePath(path, basePath) :  # detect/prepare and flag the contained path parmeters
