@@ -94,14 +94,15 @@ def processMethod(soup, swagger, entity):
 
   cursor = {'entity' : entity, 'path' : namePath, 'method' : nameMethod}
 
-  if cursor['entity'] == "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXboard" \
-    and cursor['method'] != "get":
+  if cursor['entity'] == "cardxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" \
+    and cursor['method'] == "delete":
       debugPrint = True
   else:
       debugPrint = False
 
 
-  if debugPrint : print "Method : {}, Path : {}".format(nameMethod, namePath)
+  print "Method : {}, Path : {}".format(nameMethod, namePath)
+#  if debugPrint : print "Method : {}, Path : {}".format(nameMethod, namePath)
 
   if   namePath not in swagger['paths'] :
                                 swagger['paths'][namePath] = {}
@@ -136,9 +137,7 @@ def processMethod(soup, swagger, entity):
   '''
 
   swagger['paths'][namePath][nameMethod]['parameters'] = []
-  if arguments.ul != None :
-#    processArguments(arguments, swagger['paths'][namePath][nameMethod], defPath["fields"], cursor)
-    processArguments(arguments, swagger, defPath["fields"], cursor)
+  processArguments(arguments, swagger, defPath["fields"], cursor)
 
   return
 

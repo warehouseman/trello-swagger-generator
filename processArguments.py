@@ -34,7 +34,6 @@ def processArguments(soup, swggr, path_fields, cursor):
 
 
   swagger = swggr['paths'][cursor['path']][cursor['method']]
-  arguments = soup.ul.contents
 
   processed_args = []
 
@@ -51,36 +50,39 @@ def processArguments(soup, swggr, path_fields, cursor):
     })
     processed_args.append(name_arg)
 
-  idx = -1
-  modelName = None
-  action = 'added'
-  for argument in arguments :
-    if isinstance(argument, type(soup.li)) :
-      name_arg = argument.code.span.text
-      if name_arg not in processed_args :
-  #      idx = idx + 1
-  #      print "#{} -- {}".format(idx, argument)
-        if cursor['method'] in ["put", "post"] :
-          # process all the fields that are sent in the body
-          modelName = processBodyArgument(argument, swggr, cursor)
-          if cursor['method'] == "put" :
-            action = 'updated'
-        else :
-          # process all the fields that follow the "?" in the URL
-          processQueryArgument(argument, swggr, cursor)
+  if soup.ul != None :
+    arguments = soup.ul.contents
 
-  if modelName :
-    modelTitle = re.sub(
-        "([a-z])([A-Z])","\g<1> \g<2>",
-        modelName
-      ).replace('_', ' ').title()
-    swagger["parameters"].append({
-        "name" : "body"
-      , "required" : True
-      , "in" : "body"
-      , "description" : 'Attributes of "' + modelTitle + '" to be ' + action + '.'
-      , "schema" : { "$ref" : '#/definitions/' + modelName }
-    })
+    idx = -1
+    modelName = None
+    action = 'added'
+    for argument in arguments :
+      if isinstance(argument, type(soup.li)) :
+        name_arg = argument.code.span.text
+        if name_arg not in processed_args :
+    #      idx = idx + 1
+    #      print "#{} -- {}".format(idx, argument)
+          if cursor['method'] in ["put", "post"] :
+            # process all the fields that are sent in the body
+            modelName = processBodyArgument(argument, swggr, cursor)
+            if cursor['method'] == "put" :
+              action = 'updated'
+          else :
+            # process all the fields that follow the "?" in the URL
+            processQueryArgument(argument, swggr, cursor)
+
+    if modelName :
+      modelTitle = re.sub(
+          "([a-z])([A-Z])","\g<1> \g<2>",
+          modelName
+        ).replace('_', ' ').title()
+      swagger["parameters"].append({
+          "name" : "body"
+        , "required" : True
+        , "in" : "body"
+        , "description" : 'Attributes of "' + modelTitle + '" to be ' + action + '.'
+        , "schema" : { "$ref" : '#/definitions/' + modelName }
+      })
 
 #  add the authorization key field
   swagger["parameters"].append({

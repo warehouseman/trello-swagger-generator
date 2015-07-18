@@ -1349,7 +1349,32 @@
         ], 
         "operationId": "addListsArchiveAllCardsByIdList", 
         "summary": "addListsArchiveAllCardsByIdList()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "idList", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idList"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "list"
         ]
@@ -3483,7 +3508,32 @@
         ], 
         "operationId": "getActionsEntitiesByIdAction", 
         "summary": "getActionsEntitiesByIdAction()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "idAction", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idAction"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "action"
         ]
@@ -3551,7 +3601,32 @@
         ], 
         "operationId": "deleteCardsByIdCard", 
         "summary": "deleteCardsByIdCard()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "card id or shortlink", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idCard"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "card"
         ]
@@ -3793,7 +3868,32 @@
         ], 
         "operationId": "deleteTokensByToken", 
         "summary": "deleteTokensByToken()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "token", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "token"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "token"
         ]
@@ -4135,7 +4235,32 @@
         ], 
         "operationId": "getBoardsMyPrefsByIdBoard", 
         "summary": "getBoardsMyPrefsByIdBoard()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "board_id", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idBoard"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "board"
         ]
@@ -4280,7 +4405,32 @@
         ], 
         "operationId": "getTypesById", 
         "summary": "getTypesById()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "id", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "id"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "type"
         ]
@@ -4867,7 +5017,32 @@
         ], 
         "operationId": "addBoardsMarkAsViewedByIdBoard", 
         "summary": "addBoardsMarkAsViewedByIdBoard()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "board_id", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idBoard"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "board"
         ]
@@ -5475,7 +5650,32 @@
         ], 
         "operationId": "addCardsMarkAssociatedNotificationsReadByIdCard", 
         "summary": "addCardsMarkAssociatedNotificationsReadByIdCard()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "card id or shortlink", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idCard"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "card"
         ]
@@ -7394,7 +7594,32 @@
         ], 
         "operationId": "deleteOrganizationsPrefsAssociatedDomainByIdOrg", 
         "summary": "deleteOrganizationsPrefsAssociatedDomainByIdOrg()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "idOrg or name", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idOrg"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "organization"
         ]
@@ -7512,7 +7737,32 @@
         ], 
         "operationId": "deleteOrganizationsLogoByIdOrg", 
         "summary": "deleteOrganizationsLogoByIdOrg()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "idOrg or name", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idOrg"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "organization"
         ]
@@ -7776,7 +8026,32 @@
         ], 
         "operationId": "getMembersSavedSearchesByIdMember", 
         "summary": "getMembersSavedSearchesByIdMember()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "idMember or username", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idMember"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "member"
         ]
@@ -8769,7 +9044,32 @@
         ], 
         "operationId": "deleteActionsByIdAction", 
         "summary": "deleteActionsByIdAction()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "idAction", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idAction"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "action"
         ]
@@ -8934,7 +9234,32 @@
         ], 
         "operationId": "getActionsDisplayByIdAction", 
         "summary": "getActionsDisplayByIdAction()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "idAction", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idAction"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "action"
         ]
@@ -9199,7 +9524,24 @@
         ], 
         "operationId": "addNotificationsAllRead", 
         "summary": "addNotificationsAllRead()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "notification"
         ]
@@ -10420,7 +10762,32 @@
         ], 
         "operationId": "getMembersBoardStarsByIdMember", 
         "summary": "getMembersBoardStarsByIdMember()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "idMember or username", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idMember"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "member"
         ]
@@ -13350,7 +13717,32 @@
         ], 
         "operationId": "deleteOrganizationsByIdOrg", 
         "summary": "deleteOrganizationsByIdOrg()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "idOrg or name", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idOrg"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "organization"
         ]
@@ -13599,7 +13991,24 @@
     "/sessions/socket": {
       "get": {
         "description": "This is the route for WebSocket requests.  See the socket API reference for a description of WebSocket usage.", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "session"
         ], 
@@ -13626,7 +14035,32 @@
         ], 
         "operationId": "addBoardsCalendarKeyGenerateByIdBoard", 
         "summary": "addBoardsCalendarKeyGenerateByIdBoard()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "board_id", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idBoard"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "board"
         ]
@@ -13849,7 +14283,32 @@
         ], 
         "operationId": "addBoardsEmailKeyGenerateByIdBoard", 
         "summary": "addBoardsEmailKeyGenerateByIdBoard()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "board_id", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idBoard"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "board"
         ]
@@ -14282,7 +14741,32 @@
         ], 
         "operationId": "getNotificationsDisplayByIdNotification", 
         "summary": "getNotificationsDisplayByIdNotification()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "idNotification", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idNotification"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "notification"
         ]
@@ -14400,7 +14884,32 @@
         ], 
         "operationId": "deleteLabelsByIdLabel", 
         "summary": "deleteLabelsByIdLabel()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "idLabel", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idLabel"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "label"
         ]
@@ -14576,7 +15085,32 @@
         ], 
         "operationId": "getNotificationsEntitiesByIdNotification", 
         "summary": "getNotificationsEntitiesByIdNotification()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "idNotification", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idNotification"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "notification"
         ]
@@ -14644,7 +15178,32 @@
         ], 
         "operationId": "deleteChecklistsByIdChecklist", 
         "summary": "deleteChecklistsByIdChecklist()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "idChecklist", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idChecklist"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "checklist"
         ]
@@ -15148,7 +15707,32 @@
         ], 
         "operationId": "getTokensWebhooksByToken", 
         "summary": "getTokensWebhooksByToken()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "token", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "token"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "token"
         ]
@@ -18692,7 +19276,32 @@
         ], 
         "operationId": "deleteWebhooksByIdWebhook", 
         "summary": "deleteWebhooksByIdWebhook()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "idWebhook", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idWebhook"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "webhook"
         ]
@@ -18707,7 +19316,32 @@
         ], 
         "operationId": "getWebhooksByIdWebhook", 
         "summary": "getWebhooksByIdWebhook()", 
-        "parameters": [], 
+        "parameters": [
+          {
+            "description": "idWebhook", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "path", 
+            "type": "string", 
+            "name": "idWebhook"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/1/appKey/generate\"  target=\"_blank\">Generate your application key</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "key"
+          }, 
+          {
+            "description": "<a href=\"https://trello.com/docs/gettingstarted/index.html#getting-a-token-from-a-user\"  target=\"_blank\">Getting a token from a user</a>", 
+            "default": "undefined", 
+            "required": true, 
+            "in": "query", 
+            "type": "string", 
+            "name": "token"
+          }
+        ], 
         "tags": [
           "webhook"
         ]

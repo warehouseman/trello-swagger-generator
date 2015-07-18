@@ -18,7 +18,7 @@ def processBodyArgument(soup, swggr, cursor):
   # and cursor['path'] in ["/boards","/cards","/checklists","/labels","/lists","/organizations","/sessions","/webhooks"] :
   # # ["/boards/{idBoard}/lists"] :
 
-  if cursor['path'] in ["/members/{idMember}/boardStars/{idBoardStar}/idBoard"] :
+  if cursor['path'] in ["xxxxx/members/{idMember}/boardStars/{idBoardStar}/idBoard"] :
     debugPrint = True
   else :
     debugPrint = False
