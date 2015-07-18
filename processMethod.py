@@ -107,7 +107,17 @@ def processMethod(soup, swagger, entity):
   if   namePath not in swagger['paths'] :
                                 swagger['paths'][namePath] = {}
   if nameMethod not in swagger['paths'][namePath] :
-                    swagger['paths'][namePath][nameMethod] = {"tags" : [entity]}
+                    swagger['paths'][namePath][nameMethod] = {
+                        "responses" : {
+                          "200" : {
+                            "description" : "Success"
+                          },
+                          "400" : {
+                            "description" : "Server rejection"
+                          }
+                        },
+                        "tags" : [entity]
+                      }
 
 
   swagger['paths'][namePath][nameMethod]['operationId'] = makeOperationId(nameMethod, defPath)
